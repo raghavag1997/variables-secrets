@@ -1,0 +1,10 @@
+name: Environmental Variables
+on: workflow_dispatch
+env:
+  name: Raghav
+jobs:
+ TestJob:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Using Environmental Variables
+     run: echo ${{ env.name }} 
