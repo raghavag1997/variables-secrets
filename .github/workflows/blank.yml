@@ -8,3 +8,5 @@ jobs:
    steps:
    - name: Using Environmental Variables
      run: echo ${{ env.name }} 
+   - name: Using Normal Variables
+     run: echo ${{ vars.x }}
