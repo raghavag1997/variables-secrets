@@ -1,0 +1,21 @@
+name: Variables According to Envionment
+on: workflow_dispatch
+jobs:
+  DevJob:
+    runs-on: ubuntu-latest
+    environment: Dev
+    steps:
+    - name: Printing
+      run: echo ${{ vars.name }}
+  QaJob:
+    runs-on: ubuntu-latest
+    environment: QA
+    steps:
+    - name: Printing
+      run: echo ${{ vars.name }}
+  StageJob:
+    runs-on: ubuntu-latest
+    environment: Stage
+    steps:
+    - name: Printing
+      run: echo ${{ vars.name }}
