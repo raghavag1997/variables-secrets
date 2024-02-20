@@ -7,6 +7,8 @@ jobs:
     steps:
     - name: Printing
       run: echo ${{ vars.name }}
+    - name: Printing Secret
+      run: echo ${{ secrets.password }}
   QaJob:
     runs-on: ubuntu-latest
     environment: QA
