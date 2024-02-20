@@ -10,3 +10,5 @@ jobs:
      run: echo ${{ env.name }} 
    - name: Using Normal Variables
      run: echo ${{ vars.x }}
+   - name: Using Secrets
+     run: echo ${{ secrets.pass }}
